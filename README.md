@@ -67,10 +67,10 @@ $$S_{k,K} = W_k - \sum_{j=1}^{K-1} S_{k,j}, \quad S_{k,j} \sim \mathcal{N}(0, \s
 $$\bar{W} = \frac{1}{K} \sum_{j=1}^K A_j = \frac{1}{K} \sum_{k=1}^K W_k \quad (\Delta < 10^{-14})$$
 
 ### 3. INT8 Gradient Quantization (Eq. 6, 7, 8)
-$$\text{scale} = \frac{w_{\max} - w_{\min}}{255.0}, \quad z_{\text{point}} = \operatorname{round}\left(-\frac{w_{\min}}{\text{scale}}\right) - 128$$
-$$q = \operatorname{clip}\left(\operatorname{round}\left(\frac{w}{\text{scale}}\right) + z_{\text{point}}, -128, 127\right)$$
-$$\hat{w} = (q - z_{\text{point}}) \times \text{scale}$$
-$$\text{SNR} = 10 \log_{10} \left[ \frac{\operatorname{Var}(W)}{\mathbb{E}[(W - \hat{W})^2]} \right] \text{ dB}$$
+$$\mathrm{scale} = \frac{w_{\max} - w_{\min}}{255.0}, \quad z_{\mathrm{point}} = \mathrm{round}\left(-\frac{w_{\min}}{\mathrm{scale}}\right) - 128$$
+$$q = \mathrm{clip}\left(\mathrm{round}\left(\frac{w}{\mathrm{scale}}\right) + z_{\mathrm{point}}, -128, 127\right)$$
+$$\hat{w} = (q - z_{\mathrm{point}}) \times \mathrm{scale}$$
+$$\mathrm{SNR} = 10 \log_{10} \left[ \frac{\mathrm{Var}(W)}{\mathbb{E}[(W - \hat{W})^2]} \right] \text{ dB}$$
 
 ### 4. Algorithm 2 Dynamic Context Scoring (Eq. 9 & 10)
 $$w_{\text{sec}} = \frac{\text{threat}}{10.0}, \quad w_{\text{comm}} = \max\left(0.2, \frac{50}{BW + \varepsilon}\right), \quad w_{\text{comp}} = \max\left(0.2, \frac{20}{SLA + \varepsilon} + (1 - \text{batt})\right)$$
