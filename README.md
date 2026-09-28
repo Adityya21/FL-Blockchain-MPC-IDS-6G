@@ -191,15 +191,11 @@ python reproduce_all_tables.py
 | **WebBased** | 320 | 20.50% | **23.50%** | **+3.00%** |
 | **Macro F1** | 6,880 | 60.26% | **61.71%** | **+1.46%** |
 
----
+## 👥 Authors
 
-## 📝 Citation
-
-```bibtex
-@article{udani2026fbmp,
-  title={FBMP-IDS: A Federated Learning-Based Blockchain-Powered Lightweight MPC-Secured Intrusion Detection System for 6G Networks -- Implementation, Validation, and Enhanced Results},
-  author={Udani, Param and Yashovardhan, Aditya and Maradia, Aayush and Gurjar, Daksh and Mehta, Rishabh and Desai, Kunj},
-  journal={IEEE Transactions / Access},
-  year={2026}
-}
-```
+- **Param Udani** — *Department of Computer Engineering, SVKM's NMIMS MPSTME, Shirpur, India*
+- **Aditya Yashovardhan** — *Department of Computer Engineering, SVKM's NMIMS MPSTME, Shirpur, India*
+- **Aayush Maradia** — *Department of Computer Engineering, SVKM's NMIMS MPSTME, Shirpur, India*
+- **Daksh Gurjar** — *Department of Computer Engineering, SVKM's NMIMS MPSTME, Shirpur, India*
+- **Rishabh Mehta** — *Department of Computer Engineering, SVKM's NMIMS MPSTME, Shirpur, India*
+- **Kunj Desai** — *Department of Computer Engineering, SVKM's NMIMS MPSTME, Shirpur, India*
